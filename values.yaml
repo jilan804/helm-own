@@ -10,14 +10,14 @@ image:
   pullPolicy: IfNotPresent
 
 service:
-  type: ClusterIP
+ # type: ClusterIP
   port: 80
 
 ingress:
-  enabled: true
+  enabled: false
   annotations: {}
     nginx.ingress.kubernetes.io/rewrite-target: /
-  path: /helm
+  path: /
   hosts:
     - helm.example.com
   tls: []
