@@ -10,7 +10,7 @@ image:
   pullPolicy: IfNotPresent
 
 service:
- # type: ClusterIP
+  type: ClusterIP
   port: 80
 
 ingress:
@@ -20,7 +20,7 @@ ingress:
   path: /
   hosts:
     - helm.example.com
-  tls: []
+ # tls: []
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
