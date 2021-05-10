@@ -5,12 +5,12 @@
 replicaCount: 1
 
 image:
-  repository: 292090429255.dkr.ecr.ap-south-1.amazonaws.com/eks
+  repository: 292090429255.dkr.ecr.ap-south-1.amazonaws.com/a.ysquaretechnology.com:latest
   tag: latest
   pullPolicy: IfNotPresent
 
 service:
-  type: ClusterIP
+  type: LoadBalancer
   port: 80
 
 ingress:
